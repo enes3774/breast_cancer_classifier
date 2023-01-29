@@ -9,7 +9,7 @@ PATCH_MODEL_PATH='models/sample_patch_model.p'
 IMAGE_MODEL_PATH='models/ImageOnly__ModeImage_weights.p'
 IMAGEHEATMAPS_MODEL_PATH='models/ImageHeatmaps__ModeImage_weights.p'
 
-SAMPLE_SINGLE_OUTPUT_PATH='sample_single_output'
+SAMPLE_SINGLE_OUTPUT_PATH='/kaggle/working/sample_single_output'
 export PYTHONPATH=$(pwd):$PYTHONPATH
 
 
