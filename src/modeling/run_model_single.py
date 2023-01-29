@@ -157,7 +157,7 @@ def run(parameters):
     print(json.dumps(predictions_dict))
     with open('/kaggle/working/data.json', 'w') as f:
         json.dump(predictions_dict, f)
-    print("predictions saved")
+    print("predictions saved to /kaggle/working/data.json")
 
 def main():
     parser = argparse.ArgumentParser(description='Run image-only model or image+heatmap model')
