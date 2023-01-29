@@ -155,7 +155,9 @@ def run(parameters):
         "malignant": float(agg_predictions[1]),
     }
     print(json.dumps(predictions_dict))
-
+    with open('data.json', 'w') as f:
+        json.dump(predictions_dict, f)
+    print("predictions saved")
 
 def main():
     parser = argparse.ArgumentParser(description='Run image-only model or image+heatmap model')
