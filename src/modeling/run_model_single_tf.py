@@ -180,6 +180,7 @@ def run(parameters):
     
     with open('data.json', 'w') as f:
         json.dump(predictions_dict, f)
+    print("predictions saved")
 
 
 def main():
