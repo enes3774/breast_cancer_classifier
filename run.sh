@@ -44,6 +44,7 @@ python3 src/heatmaps/run_producer.py \
     --output-heatmap-path $HEATMAPS_PATH \
     --device-type $DEVICE_TYPE \
     --gpu-number $GPU_NUMBER
+    --batch-size 8
 
 
 echo 'Stage 4b: Run Classifier (Image+Heatmaps)'
@@ -58,3 +59,4 @@ python3 src/modeling/run_model.py \
     --num-epochs $NUM_EPOCHS \
     --device-type $DEVICE_TYPE \
     --gpu-number $GPU_NUMBER
+    --batch-size 8
