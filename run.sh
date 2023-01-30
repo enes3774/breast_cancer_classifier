@@ -43,7 +43,7 @@ python3 src/heatmaps/run_producer.py \
     --batch-size $HEATMAP_BATCH_SIZE \
     --output-heatmap-path $HEATMAPS_PATH \
     --device-type $DEVICE_TYPE \
-    --gpu-number $GPU_NUMBER
+    --gpu-number $GPU_NUMBER \
     --batch-size 1000
 
 
@@ -58,5 +58,5 @@ python3 src/modeling/run_model.py \
     --use-augmentation \
     --num-epochs $NUM_EPOCHS \
     --device-type $DEVICE_TYPE \
-    --gpu-number $GPU_NUMBER
+    --gpu-number $GPU_NUMBER \
     --batch-size 8
