@@ -37,7 +37,7 @@ import src.modeling.models as models
 import src.data_loading.loading as loading
 from src.constants import VIEWS, VIEWANGLES, LABELS, MODELMODES
 
-
+from matplotlib import pyplot
 def load_model(parameters):
     """
     Loads trained cancer classifier
@@ -112,6 +112,8 @@ def run_model(model, device, exam_list, parameters):
                             max_crop_noise=parameters["max_crop_noise"],
                             max_crop_size_noise=parameters["max_crop_size_noise"],
                         )
+                        pyplot.imshow(cropped_image)
+                        pyplot.show()
                         if loaded_heatmaps_dict[view][image_index] is None:
                             batch_dict[view].append(cropped_image[:, :, np.newaxis])
                         else:
